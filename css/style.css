@@ -4,6 +4,15 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+a{
+    color: #5254e0;
+}
+
+a:visited{
+    color: #5254e0;
+
+}
+
 body{
     background-color: #f0f0f0;
 
@@ -38,6 +47,23 @@ main{
     margin-top: 50px;
     height: 750px;
     max-width: 1000px;
+}
+
+footer{
+    background-color: #14213D;
+    color: #FCA311;
+    font-weight: bolder;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    border-top: 5px solid #FCA311;
+    box-sizing: border-box;
+}
+
+.dev{
+    padding: 20px;
+
 }
 
 .formContainer{
@@ -159,25 +185,113 @@ main{
     word-wrap: break-word;
 }
 
-.fa-trash-alt{
-    cursor: pointer;    
-    transition-duration: 0.2s;
-}
-
-
-.fa-trash-alt:hover{
-    color: #b40000;
-    transition-duration: 0.2s;
-}
-
-.trash{
-    display: inline-block;
-    border-radius: 5px;
-    margin: 5px;
-    background-color: #ececec;
-    padding: 10px;
-}
-
 .content{
     text-align: center;
+}
+
+@media screen and (max-height: 950px){
+
+    main{
+        box-sizing: border-box;
+        background-color: #14213D;
+        border: 5px solid #FCA311;
+        border-radius: 10px;
+        margin: auto;
+        margin-top: 20px;
+        height: 720px;
+        max-width: 1000px;
+    }
+}
+
+@media screen and (max-height: 910px){
+
+    main{
+        box-sizing: border-box;
+        background-color: #14213D;
+        border: 5px solid #FCA311;
+        border-radius: 10px;
+        margin: auto;
+        margin-top: 20px;
+        height: 720px;
+        max-width: 1000px;
+    }
+}
+
+@media screen and (max-height: 880px){
+
+    main{
+        box-sizing: border-box;
+        background-color: #14213D;
+        border: 5px solid #FCA311;
+        border-radius: 10px;
+        margin: auto;
+        margin-top: 10px;
+        height: 600px;
+        max-width: 1000px;
+    }
+
+
+    .tasksContainer{
+        margin: auto;
+        height: 400px;
+        width:90%;
+        border-radius: 5px;
+        overflow: auto;  
+        text-align: center;  
+        background-color: #000000;
+        border: 3px solid #FCA311;
+    }
+}
+
+
+@media screen and (max-height: 750px){
+
+    main{
+        box-sizing: border-box;
+        background-color: #14213D;
+        border: 5px solid #FCA311;
+        border-radius: 10px;
+        margin: auto;
+        margin-top: 10px;
+        height: 550px;
+        max-width: 1000px;
+    }
+
+
+    .tasksContainer{
+        margin: auto;
+        height: 370px;
+        width:90%;
+        border-radius: 5px;
+        overflow: auto;  
+        text-align: center;  
+        background-color: #000000;
+        border: 3px solid #FCA311;
+    }
+}
+
+@media screen and (max-height: 700px){
+
+    main{
+        box-sizing: border-box;
+        background-color: #14213D;
+        border: 5px solid #FCA311;
+        border-radius: 10px;
+        margin: auto;
+        margin-top: 10px;
+        height: 490px;
+        max-width: 1000px;
+    }
+
+
+    .tasksContainer{
+        margin: auto;
+        height: 340px;
+        width:90%;
+        border-radius: 5px;
+        overflow: auto;  
+        text-align: center;  
+        background-color: #000000;
+        border: 3px solid #FCA311;
+    }
 }
