@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #f0f0f0;
+
+}
+
+.container{
+    max-width: 100%;
+    margin: auto;
+}
+
+header{
+    box-sizing: border-box;
+    margin: auto;
+    background-color: #14213D;
+}
+
+#title{
+    text-align: center;
+    margin: auto;
+    color: #FCA311;
+    padding: 15px;
+    border-bottom: 5px solid #FCA311;
+    user-select: none;  
+}
+
+main{
+    box-sizing: border-box;
+    background-color: #14213D;
+    border: 5px solid #FCA311;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 50px;
+    height: 750px;
+    max-width: 1000px;
+}
+
+.formContainer{
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#inputTask{
+    display: block;
+    margin: auto;
+    text-align: center;
+    height: 30px;
+    width: 70%;
+    font-size: large;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px;
+    width: 200px;
+    margin: auto;
+    border-radius: 5px;
+    box-sizing: border-box;
+    user-select: none;  
+}
+
+.btn:hover{
+    padding: 10px;
+    width: 200px;
+    margin: auto;
+    box-sizing: border-box;
+    border-radius: 5px;
+    user-select: none;  
+    cursor: pointer;
+}
+
+.btn:active{
+    padding: 10px;
+    width: 200px;
+    margin: auto;
+    box-sizing: border-box;
+    border-radius: 5px;
+    user-select: none;  
+    cursor: pointer;
+}
+
+.btnAddTask{
+    margin-bottom: 10px;
+    background-color: #4fd800;
+    transition-duration: 0.5s;
+}
+
+.btnAddTask:hover{
+    background-color: #42b400;
+    transition-duration: 0.5s;
+}
+
+.btnAddTask:active{
+    background-color: #3ba000;    
+    transition-duration: 0.2s;
+}
+
+.btnCeanTasks{
+    margin-bottom: 10px;
+    background-color: #d80000;
+    transition-duration: 0.5s;
+}
+
+.btnCeanTasks:hover{
+    background-color: #b40000;
+    transition-duration: 0.5s;
+}
+
+.btnCeanTasks:active{
+    background-color: #a00000;    
+    transition-duration: 0.2s;
+}
+
+.tasksContainer{
+    margin: auto;
+    height: 550px;
+    width:90%;
+    border-radius: 5px;
+    overflow: auto;  
+    text-align: center;  
+    background-color: #000000;
+    border: 3px solid #FCA311;
+}
+
+.tasksContainer::-webkit-scrollbar {
+    width: 10px;               /* width of the entire scrollbar */
+}
+
+.tasksContainer::-webkit-scrollbar-track {
+    background: rgb(207, 207, 207);        /* color of the tracking area */
+    border-radius: 20px;
+}
+
+.tasksContainer::-webkit-scrollbar-thumb {
+    background-color: rgb(82, 82, 82);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid rgb(207, 207, 207);  /* creates padding around scroll thumb */
+}
+
+.task{
+    margin: auto;
+    margin-top: 10px;
+    width: 85%;
+    border-radius: 5px;
+    background-color: #ececec;
+    padding: 20px;
+    list-style-type: none;
+    display: inline-block;
+    text-align: left;
+    margin-left: 10px;
+    word-wrap: break-word;
+}
+
+.fa-trash-alt{
+    cursor: pointer;    
+    transition-duration: 0.2s;
+}
+
+
+.fa-trash-alt:hover{
+    color: #b40000;
+    transition-duration: 0.2s;
+}
+
+.trash{
+    display: inline-block;
+    border-radius: 5px;
+    margin: 5px;
+    background-color: #ececec;
+    padding: 10px;
+}
+
+.content{
+    text-align: center;
+}
