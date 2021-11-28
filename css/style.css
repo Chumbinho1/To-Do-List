@@ -44,8 +44,7 @@ main{
     border: 5px solid #FCA311;
     border-radius: 10px;
     margin: auto;
-    margin-top: 50px;
-    height: 750px;
+    margin-top: 20px;
     max-width: 1000px;
 }
 
@@ -84,18 +83,22 @@ footer{
 
 .btn{
     display: inline-block;
-    padding: 10px;
     width: 200px;
+    height: 30px;
     margin: auto;
+    margin-bottom: 5px;
+    padding-top: 5px;
     border-radius: 5px;
     box-sizing: border-box;
     user-select: none;  
 }
 
 .btn:hover{
-    padding: 10px;
     width: 200px;
+    height: 30px;
     margin: auto;
+    margin-bottom: 5px;
+    padding-top: 5px;
     box-sizing: border-box;
     border-radius: 5px;
     user-select: none;  
@@ -103,17 +106,19 @@ footer{
 }
 
 .btn:active{
-    padding: 10px;
     width: 200px;
+    height: 30px;
     margin: auto;
+    margin-bottom: 5px;
     box-sizing: border-box;
     border-radius: 5px;
     user-select: none;  
     cursor: pointer;
+    padding-top: 5px;
+
 }
 
 .btnAddTask{
-    margin-bottom: 10px;
     background-color: #4fd800;
     transition-duration: 0.5s;
 }
@@ -129,7 +134,6 @@ footer{
 }
 
 .btnCeanTasks{
-    margin-bottom: 10px;
     background-color: #d80000;
     transition-duration: 0.5s;
 }
@@ -146,6 +150,7 @@ footer{
 
 .tasksContainer{
     margin: auto;
+    margin-bottom: 30px;
     height: 550px;
     width:90%;
     border-radius: 5px;
@@ -187,52 +192,141 @@ footer{
 .content{
     text-align: center;
 }
+@media screen and (max-width: 420px){
+    .btn{
+        display: block;
+    }
 
-@media screen and (max-height: 950px){
-
-    main{
-        box-sizing: border-box;
+    footer{
         background-color: #14213D;
-        border: 5px solid #FCA311;
-        border-radius: 10px;
+        color: #FCA311;
+        font-size: 0.8rem;
+        font-weight: bolder;
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+        text-align: center;
+        border-top: 5px solid #FCA311;
+        box-sizing: border-box;
+    }
+    
+    .dev{
+        padding: 10px;
+    }
+    
+    #title{
+        text-align: center;
         margin: auto;
-        margin-top: 20px;
-        height: 720px;
-        max-width: 1000px;
+        color: #FCA311;
+        padding: 10px;
+        border-bottom: 5px solid #FCA311;
+        user-select: none;
+        font-size: 0.8rem;  
+    }
+    @media screen and (max-height: 870px) {
+        .tasksContainer{
+            margin: auto;
+            margin-bottom: 30px;
+            height: 500px;
+            width:90%;
+            border-radius: 5px;
+            overflow: auto;  
+            text-align: center;  
+            background-color: #000000;
+            border: 3px solid #FCA311;
+        }
+
+        @media screen and (max-height: 820px) {
+            .tasksContainer{
+                margin: auto;
+                margin-bottom: 30px;
+                height: 400px;
+                width:90%;
+                border-radius: 5px;
+                overflow: auto;  
+                text-align: center;  
+                background-color: #000000;
+                border: 3px solid #FCA311;
+            }
+
+            @media screen and (max-height: 720px) {
+                .tasksContainer{
+                    margin: auto;
+                    margin-bottom: 30px;
+                    height: 350px;
+                    width:90%;
+                    border-radius: 5px;
+                    overflow: auto;  
+                    text-align: center;  
+                    background-color: #000000;
+                    border: 3px solid #FCA311;
+                }
+                
+                @media screen and (max-height: 670px) {
+                    .tasksContainer{
+                        margin: auto;
+                        margin-bottom: 30px;
+                        height: 310px;
+                        width:90%;
+                        border-radius: 5px;
+                        overflow: auto;  
+                        text-align: center;  
+                        background-color: #000000;
+                        border: 3px solid #FCA311;
+                    }
+
+                    @media screen and (max-height: 630px) {
+                        .tasksContainer{
+                            margin: auto;
+                            margin-bottom: 30px;
+                            height: 250px;
+                            width:90%;
+                            border-radius: 5px;
+                            overflow: auto;  
+                            text-align: center;  
+                            background-color: #000000;
+                            border: 3px solid #FCA311;
+                        }
+                        @media screen and (max-height: 570px) {
+                            .tasksContainer{
+                                margin: auto;
+                                margin-bottom: 30px;
+                                height: 200px;
+                                width:90%;
+                                border-radius: 5px;
+                                overflow: auto;  
+                                text-align: center;  
+                                background-color: #000000;
+                                border: 3px solid #FCA311;
+                            }
+                            
+                            @media screen and (max-height: 520px) {
+                                .tasksContainer{
+                                    margin: auto;
+                                    margin-bottom: 30px;
+                                    height: 150px;
+                                    width:90%;
+                                    border-radius: 5px;
+                                    overflow: auto;  
+                                    text-align: center;  
+                                    background-color: #000000;
+                                    border: 3px solid #FCA311;
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
     }
 }
 
-@media screen and (max-height: 910px){
-
-    main{
-        box-sizing: border-box;
-        background-color: #14213D;
-        border: 5px solid #FCA311;
-        border-radius: 10px;
-        margin: auto;
-        margin-top: 20px;
-        height: 720px;
-        max-width: 1000px;
-    }
-}
-
-@media screen and (max-height: 880px){
-
-    main{
-        box-sizing: border-box;
-        background-color: #14213D;
-        border: 5px solid #FCA311;
-        border-radius: 10px;
-        margin: auto;
-        margin-top: 10px;
-        height: 600px;
-        max-width: 1000px;
-    }
-
-
+@media screen and (max-height: 870px) {
     .tasksContainer{
         margin: auto;
-        height: 400px;
+        margin-bottom: 30px;
+        height: 500px;
         width:90%;
         border-radius: 5px;
         overflow: auto;  
@@ -240,58 +334,87 @@ footer{
         background-color: #000000;
         border: 3px solid #FCA311;
     }
-}
 
+    @media screen and (max-height: 820px) {
+        .tasksContainer{
+            margin: auto;
+            margin-bottom: 30px;
+            height: 400px;
+            width:90%;
+            border-radius: 5px;
+            overflow: auto;  
+            text-align: center;  
+            background-color: #000000;
+            border: 3px solid #FCA311;
+        }
 
-@media screen and (max-height: 750px){
+        @media screen and (max-height: 720px) {
+            .tasksContainer{
+                margin: auto;
+                margin-bottom: 30px;
+                height: 350px;
+                width:90%;
+                border-radius: 5px;
+                overflow: auto;  
+                text-align: center;  
+                background-color: #000000;
+                border: 3px solid #FCA311;
+            }
+            
+            @media screen and (max-height: 670px) {
+                .tasksContainer{
+                    margin: auto;
+                    margin-bottom: 30px;
+                    height: 310px;
+                    width:90%;
+                    border-radius: 5px;
+                    overflow: auto;  
+                    text-align: center;  
+                    background-color: #000000;
+                    border: 3px solid #FCA311;
+                }
 
-    main{
-        box-sizing: border-box;
-        background-color: #14213D;
-        border: 5px solid #FCA311;
-        border-radius: 10px;
-        margin: auto;
-        margin-top: 10px;
-        height: 550px;
-        max-width: 1000px;
+                @media screen and (max-height: 630px) {
+                    .tasksContainer{
+                        margin: auto;
+                        margin-bottom: 30px;
+                        height: 250px;
+                        width:90%;
+                        border-radius: 5px;
+                        overflow: auto;  
+                        text-align: center;  
+                        background-color: #000000;
+                        border: 3px solid #FCA311;
+                    }
+                    @media screen and (max-height: 570px) {
+                        .tasksContainer{
+                            margin: auto;
+                            margin-bottom: 30px;
+                            height: 200px;
+                            width:90%;
+                            border-radius: 5px;
+                            overflow: auto;  
+                            text-align: center;  
+                            background-color: #000000;
+                            border: 3px solid #FCA311;
+                        }
+                        
+                        @media screen and (max-height: 520px) {
+                            .tasksContainer{
+                                margin: auto;
+                                margin-bottom: 30px;
+                                height: 150px;
+                                width:90%;
+                                border-radius: 5px;
+                                overflow: auto;  
+                                text-align: center;  
+                                background-color: #000000;
+                                border: 3px solid #FCA311;
+                            }
+                        }
+                    }                   
+                }
+            }
+        }
     }
-
-
-    .tasksContainer{
-        margin: auto;
-        height: 370px;
-        width:90%;
-        border-radius: 5px;
-        overflow: auto;  
-        text-align: center;  
-        background-color: #000000;
-        border: 3px solid #FCA311;
-    }
-}
-
-@media screen and (max-height: 700px){
-
-    main{
-        box-sizing: border-box;
-        background-color: #14213D;
-        border: 5px solid #FCA311;
-        border-radius: 10px;
-        margin: auto;
-        margin-top: 10px;
-        height: 490px;
-        max-width: 1000px;
-    }
-
-
-    .tasksContainer{
-        margin: auto;
-        height: 340px;
-        width:90%;
-        border-radius: 5px;
-        overflow: auto;  
-        text-align: center;  
-        background-color: #000000;
-        border: 3px solid #FCA311;
-    }
-
 }
