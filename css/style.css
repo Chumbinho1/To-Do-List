@@ -192,7 +192,51 @@ footer{
 .content{
     text-align: center;
 }
-@media screen and (max-width: 420px){
+
+@media screen and (max-width: 500px){
+    .task{
+        margin: auto;
+        margin-top: 10px;
+        width: 75%;
+        border-radius: 5px;
+        background-color: #ececec;
+        padding: 20px;
+        list-style-type: none;
+        display: inline-block;
+        text-align: left;
+        margin-left: 10px;
+        word-wrap: break-word;
+    }
+    @media screen and (max-width: 420px){
+        .task{
+            margin: auto;
+            margin-top: 10px;
+            width: 75%;
+            border-radius: 5px;
+            background-color: #ececec;
+            padding: 20px;
+            list-style-type: none;
+            display: inline-block;
+            text-align: left;
+            margin-left: 10px;
+            word-wrap: break-word;
+        }
+        @media screen and (max-width: 330px){
+            .task{
+                margin: auto;
+                margin-top: 10px;
+                width: 65%;
+                border-radius: 5px;
+                background-color: #ececec;
+                padding: 20px;
+                list-style-type: none;
+                display: inline-block;
+                text-align: left;
+                margin-left: 10px;
+                word-wrap: break-word;
+            }
+        }
+    }
     .btn{
         display: block;
     }
@@ -314,7 +358,6 @@ footer{
                                 }
                             }
                         }
-                        
                     }
                 }
             }
