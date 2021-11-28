@@ -189,6 +189,22 @@ footer{
     word-wrap: break-word;
 }
 
+.taskLi{
+    padding-bottom: 10px;
+}
+
+.fa-trash-alt{
+    color: #000000;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    float: right;
+
+}
+
+.fa-trash-alt:hover{
+    color: #b40000;
+}
+
 .content{
     text-align: center;
 }
