@@ -294,17 +294,4 @@ footer{
         border: 3px solid #FCA311;
     }
 
-    footer{
-        color: #FCA311;
-        font-weight: bolder;
-        position: fixed;
-        bottom: 0px;
-        width: 100%;
-        text-align: center;
-    }
-
-
-    .dev{
-        padding: 10px;
-    }
 }
